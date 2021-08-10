@@ -1,0 +1,39 @@
+1) //book
+
+2) //book[@type='roman']//title
+
+3) count(//book[@type='bd'])
+
+4) Found 2 nodes:
+-- NODE --
+<library>
+	<book>
+		<title>toto1</title>
+		<author>titi</author>
+	</book>
+	<book type="doc">
+		<title>toto2</title>
+		<author>titi</author>
+	</book>
+	<book type="roman">
+		<title>toto3</title>
+		<author>titi</author>
+	</book>
+	<book type="bd">
+		<title>toto4</title>
+		<author>titi2</author>
+	</book>
+	<library>
+		<book type="roman">
+			<title>toto5</title>
+			<author>titi</author>
+		</book>
+	</library>
+</library>
+-- NODE --
+<library>
+	<book type="roman">
+		<title>toto5</title>
+		<author>titi</author>
+	</book>
+</library>
